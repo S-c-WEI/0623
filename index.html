@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>深淺色模式</title>
+    
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            transition: 0.3s; 
+        }
+        .box {
+            width: 90%;
+            max-width: 400px;
+            margin: 20px auto;
+            background: #eee;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px), (max-height: 500px) {
+            body {
+                background-color: #121212; 
+                color: white;              
+            }
+            .box {
+                background: #222;        
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h2>RWD 登入</h2>
+        <p>把視窗拉小，變成深色模式</p>
+        帳號：<input type="text"><br><br>
+        密碼：<input type="password"><br>
+        <button>登入</button>
+    </div>
+
+</body>
+</html>
